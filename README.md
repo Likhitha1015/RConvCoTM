@@ -1,17 +1,17 @@
-FPGA Clause-Based Classification System
+# Reconfigurable Convolutional Coalesced Tsetlin Machine
 
-This repository contains the FPGA implementation of a clause-based classifier as presented in our paper. The system supports MNIST, FMNIST, KMNIST datasets, and custom dataset testing.
+This repository contains the FPGA implementation of a Reconfigurable Convolutional Coalesced Tsetlin Machine as presented in our paper. The system supports MNIST, FMNIST, KMNIST datasets, and custom dataset testing.
 
-Specifications
+## Specifications
 Parameter	Value
-Maximum Clauses	140
+Maximum number of Clauses	140
 Number of Classes	10
 Stride	Less than Patch Size
 Patch Sizes	3 / 5 / 7
 Hardware	ZCU102 FPGA
 Connection	Ethernet
-Getting Started
-Required Tools
+## Getting Started
+### Required Tools
 
 Xilinx Vitis
  (Platform + Application projects)
@@ -20,7 +20,7 @@ MATLAB (for preprocessing)
 
 Python (for host code execution)
 
-Testing Preprocessed Datasets
+## Testing Preprocessed Datasets
 
 Preprocessed datasets (10k images each) are included for:
 
@@ -30,7 +30,7 @@ FMNIST
 
 KMNIST
 
-Steps:
+**Steps:**
 
 Open the Vitis platform and application projects.
 
@@ -42,10 +42,9 @@ Run the Python host code when the serial monitor shows:
 
 Waiting for 10k images
 
-
 The Python script sends images into DDR memory for testing.
 
-Custom Dataset Testing
+## Custom images Testing
 
 Preprocess images using:
 
@@ -55,7 +54,7 @@ image_padded.m
 
 Send preprocessed images via python.py to the FPGA.
 
-Custom Clauses and Weights
+## Custom Clauses and Weights
 
 Obtain clauses and weights from the TMU library.
 
@@ -71,12 +70,10 @@ Implement custom BRAM and weights access code in main.c.
 
 Reference implementations for other datasets are provided in main.c.
 
-Additional Resources
+## Additional Resources
 
 A video tutorial is attached demonstrating the complete testing and deployment process.
 
-Quick Start
-Step	Action
 1	Build and run Vitis platform + application projects
 2	Open serial monitor at 115200 baud
 3	Run python.py to send dataset images
