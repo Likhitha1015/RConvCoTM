@@ -3,20 +3,19 @@
 This repository contains the FPGA implementation of a Reconfigurable Convolutional Coalesced Tsetlin Machine as presented in our paper. The system supports MNIST, FMNIST, KMNIST datasets, and custom dataset testing.
 
 ## Specifications
-Parameter	Value
 
 Maximum number of Clauses :	140
 
 Number of Classes	: 10
 
-Patch Sizes	3 / 5 / 7
+Patch Sizes :	3 / 5 / 7
 
 Stride : 1 - Patch Size  
 Note: Weights/clauses are limited to stride = 1. For other strides, get the trained clauses from the TMU library once the stride training update is complete.
 
 Required FPGA :ZYNQ ZCU102 FPGA
 
-Connection	Ethernet
+Ethernet Cable
 
 ## Getting Started
 ### Required Tools
