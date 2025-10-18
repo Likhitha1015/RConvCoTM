@@ -26,7 +26,7 @@ for g = 1:numGroups
     concatLines{g} = strjoin(groupLines, '');  % join without spaces
 end
 
-fprintf('✅ Concatenated into %d lines (each = 140 lines combined)\n', numGroups);
+fprintf('Concatenated into %d lines (each = 140 lines combined)\n', numGroups);
 
 % === Split Each Line into 3 Parts (Like Your Logic) ===
 fid1 = fopen(f5a, 'w');
@@ -55,5 +55,6 @@ fclose(fid1);
 fclose(fid2);
 fclose(fid3);
 
-fprintf('✅ Wrote final split files:\n   %s\n   %s\n   %s\n', f5a, f5b, f5c);
-fprintf('✔️ All steps complete: %d concatenated blocks processed\n', numGroups);
+fprintf('Wrote final split files:\n   %s\n   %s\n   %s\n', f5a, f5b, f5c);
+fprintf('All steps complete: %d concatenated blocks processed\n', numGroups);
+
