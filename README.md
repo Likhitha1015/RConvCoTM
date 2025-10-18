@@ -44,11 +44,11 @@ KMNIST
 
 Open the Vitis platform and application projects.
 
-Build and run the projects.
+Build both platform and application project.
 
-Open the serial monitor at 115200 baud.
+Run the application and open the serial monitor at 115200 baud.
 
-Run the Python host code when the serial monitor shows:
+Run the Python host code when the serial monitor displays:
 
 Waiting for 10k images
 
@@ -83,9 +83,3 @@ Reference implementations for other datasets are provided in main.c.
 ## Additional Resources
 
 A video tutorial is attached demonstrating the complete testing and deployment process.
-
-1	Build and run Vitis platform + application projects
-2	Open serial monitor at 115200 baud
-3	Run python.py to send dataset images
-4	For custom dataset: preprocess images → send via Python → include .h files in workspace → write custom BRAM/weights code
-5	Verify outputs on the serial monitor
