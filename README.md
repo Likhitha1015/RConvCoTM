@@ -11,6 +11,7 @@ Number of Classes	: 10
 Patch Sizes :	3 / 5 / 7
 
 Stride : 1 - Patch Size  
+
 Note: Weights/clauses are limited to stride = 1. For other strides, get the trained clauses from the TMU library once the stride training update is complete.
 
 Required FPGA :ZYNQ ZCU102 FPGA
