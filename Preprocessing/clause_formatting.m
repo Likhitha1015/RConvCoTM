@@ -32,4 +32,5 @@ for i = 1:numLines
 end
 fclose(fid);
 
-disp('✅ Padding complete. Output saved to output.txt');
+disp('Padding complete. Output saved to output.txt');
+
