@@ -87,8 +87,8 @@ try:
             if line_count % 1000 == 0:
                 print(f"{line_count} lines sent successfully...")
 
-    print(f"\n✅ Transmission complete — {line_count} binary lines sent successfully with ACKs.")
+    print(f"\nTransmission complete — {line_count} binary lines sent successfully with ACKs.")
 
 finally:
     s.close()
-    print("\n🔒 Connection closed.")
+    print("\n Connection closed.")
