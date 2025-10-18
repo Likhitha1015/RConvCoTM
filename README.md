@@ -4,17 +4,26 @@ This repository contains the FPGA implementation of a Reconfigurable Convolution
 
 ## Specifications
 Parameter	Value
+
 Maximum number of Clauses	140
+
 Number of Classes	10
+
 Stride	Less than Patch Size
+
 Patch Sizes	3 / 5 / 7
-Hardware	ZCU102 FPGA
+
+Required FPGA :ZYNQ ZCU102 FPGA
+
 Connection	Ethernet
+
 ## Getting Started
 ### Required Tools
 
-Xilinx Vitis
+Xilinx Vitis 2024.1 or later version
  (Platform + Application projects)
+
+Xilinx Vivado 2024.1 or a later version is required for editing or reusing the code.
 
 MATLAB (for preprocessing)
 
