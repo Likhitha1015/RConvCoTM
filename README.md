@@ -84,4 +84,4 @@ Reference implementations for other datasets are provided in main.c.
 
 A video tutorial is attached demonstrating the complete testing and deployment process.
 
-To execute the design, the Vitis-side source code is provided in the SW folder. Alternatively, the complete workspace can be accessed through the following link:
+To execute the design, the Vitis-side source code is provided in the SW folder. Alternatively, the complete workspace can be accessed through the following link:https://drive.google.com/drive/folders/169Ruq36pJO8Rfa5NuXUSX3CmmTXkMXMj?usp=sharing
