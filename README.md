@@ -50,9 +50,7 @@ Build both platform and application project.
 
 Run the application and open the serial monitor at 115200 baud.
 
-Run the Python host code when the serial monitor displays:
-
-Waiting for 10k images
+Run the Python host code when the serial monitor displays:Waiting for 10k images
 
 The Python script sends images into DDR memory for testing.
 
