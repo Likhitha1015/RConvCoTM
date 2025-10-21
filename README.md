@@ -12,13 +12,13 @@ Patch Sizes :	3 / 5 / 7 (Reconfigurable)
 
 Stride : 1 - Patch Size  (Reconfigurable)
 
-Note: Weights/clauses are limited to stride = 1. For other strides, get the trained clauses from the TMU library once the stride training update is complete.
-
-Note: The image dimensions have been hard-coded due to hardware constraints. However, if sufficient resources are available, these parameters can be made configurable inputs.
-
 Required FPGA :ZYNQ ZCU102
 
 Ethernet Cable
+
+Note: Weights/clauses are limited to stride = 1. For other strides, get the trained clauses from the TMU library once the stride training update is complete.
+
+Note: The image dimensions have been hard-coded due to hardware constraints. However, if sufficient resources are available, these parameters can be made configurable inputs.
 
 ## Getting Started
 ### Required Tools
