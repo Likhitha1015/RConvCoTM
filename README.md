@@ -4,15 +4,16 @@ This repository contains the FPGA implementation of a Reconfigurable Convolution
 
 ## Specifications
 
-Maximum number of Clauses :	140
+Maximum number of Clauses :	140 (Reconfigurable)
 
-Number of Classes	: 10
+Number of Classes	: 10 (Reconfigurable - max = 15)
 
-Patch Sizes :	3 / 5 / 7
+Patch Sizes :	3 / 5 / 7 (Reconfigurable)
 
-Stride : 1 - Patch Size  
+Stride : 1 - Patch Size  (Reconfigurable)
 
 Note: Weights/clauses are limited to stride = 1. For other strides, get the trained clauses from the TMU library once the stride training update is complete.
+Note: The image dimensions have been hard-coded due to hardware constraints. However, if sufficient resources are available, these parameters can be made configurable inputs.
 
 Required FPGA :ZYNQ ZCU102
 
@@ -83,3 +84,5 @@ Reference implementations for other datasets are provided in main.c.
 ## Additional Resources
 
 A video tutorial is attached demonstrating the complete testing and deployment process.
+
+To execute the design, the Vitis-side source code is provided in the SW folder. Alternatively, the complete workspace can be accessed through the following link:
